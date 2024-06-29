@@ -23,7 +23,7 @@ const MdLeftContents = () => {
 
         <div>
           <p className='hi'>안녕하세요.</p>
-          <Flex align='center'>
+          <Flex align='center' justify='start'>
             <Flex align='center'>
               <p className='stack'>
                 <ReactTyped

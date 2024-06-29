@@ -4,13 +4,12 @@
 
 .md-profile-container {
   width: fit-content;
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 
 .md-profile {
-  width: 5rem;
-  height: 5rem;
-  margin-bottom: 0.5rem;
+  width: 3rem;
+  height: 3rem;
   display: inline-block;
 }
 
@@ -35,9 +34,11 @@
   font-size: 2rem;
   font-weight: 700;
   margin: 0;
+  display: flex;
+  justify-content: start;
 }
 
 .stack {
-  margin: 0 0.5rem;
+  margin: 0 0.5rem 0 0;
   font-size: 1rem;
 }
