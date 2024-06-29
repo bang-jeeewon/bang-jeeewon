@@ -36,7 +36,7 @@ const Project = ({
         <Flex align='center' style={{ marginBottom: '0.5rem' }}>
           <ToolOutlined style={{ marginRight: '0.5rem' }} />
           <Text>개발언어: </Text>
-          {stacks.map((stack, index) => (
+          {stacks.map((stack) => (
             <Text code>{stack}</Text>
           ))}
         </Flex>
@@ -58,7 +58,7 @@ const Project = ({
         ))}
 
         <Flex justify='space-between'>
-          {imgs.map((img, index) => (
+          {imgs.map((img) => (
             <img src={img} alt='home' style={{ width: '45%' }} />
           ))}
         </Flex>

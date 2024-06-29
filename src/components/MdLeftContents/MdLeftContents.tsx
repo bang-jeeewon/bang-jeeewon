@@ -1,10 +1,8 @@
 import { ReactTyped } from 'react-typed'
 import jeeewonImg from '/jeeewon.png'
 import githubImg from '/github.svg'
-import { Flex, Typography, Row, Col } from 'antd'
+import { Flex } from 'antd'
 import './mdLeftContents.css'
-
-const { Title } = Typography
 
 const MdLeftContents = () => {
   const clickGithub = () => {
