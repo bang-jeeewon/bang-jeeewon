@@ -1,0 +1,28 @@
+.right-container {
+  padding: 1.25rem;
+}
+
+.card {
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: rgb(206, 203, 226) 0px 0px 20px 1px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.card-project {
+  background-color: transparent;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+}
+
+.period {
+  margin: 0;
+}
+
+.logo {
+  width: 8rem;
+  padding: 0 !important;
+  margin-right: 1rem;
+}

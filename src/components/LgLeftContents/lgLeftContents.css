@@ -1,0 +1,80 @@
+.left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: fit-content; /* 해당 내용만큼만 */
+}
+
+.left-title-container {
+  padding: 1.5rem 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 26.25rem;
+}
+
+.profile-container {
+  width: fit-content;
+}
+
+.profile {
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.github-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.github-text {
+  margin: 0;
+}
+
+.github-img {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.25rem;
+}
+
+.title {
+  font-weight: 800;
+  color: #2f3235;
+  margin: 0;
+}
+
+.sub-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hi {
+  font-size: 3.5rem;
+}
+
+.stack {
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+}
+
+.name {
+  font-size: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+.left-contents-container {
+  padding: 1rem 2.5rem;
+  text-align: start;
+}
+
+.email {
+  color: blue;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}

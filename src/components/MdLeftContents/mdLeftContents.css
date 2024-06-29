@@ -1,0 +1,43 @@
+.md-left-container {
+  padding: 0 2rem;
+}
+
+.md-profile-container {
+  width: fit-content;
+  margin-right: 1rem;
+}
+
+.md-profile {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.github-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.github-text {
+  margin: 0;
+}
+
+.github-img {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.25rem;
+}
+
+.hi {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.stack {
+  margin: 0 0.5rem;
+  font-size: 1rem;
+}

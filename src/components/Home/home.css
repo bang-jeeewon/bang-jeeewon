@@ -1,0 +1,47 @@
+.home {
+  height: 100vh;
+}
+
+.left-content-wrapper {
+  height: 100%;
+}
+
+.scroll-col {
+  overflow-y: auto; /* 세로 스크롤 활성화 */
+}
+
+.right-content-wrapper {
+  height: 100vh;
+  overflow-y: auto; /* 세로 스크롤 활성화 */
+}
+
+/* md 이하에서 md-left 보이게 설정 */
+@media (max-width: 991px) {
+  .md-left {
+    display: block;
+  }
+
+  /* lg-left 숨기기 */
+  .lg-left {
+    display: none;
+  }
+}
+
+/* lg 이상에서 lg-left 보이게 설정 */
+@media (min-width: 992px) {
+  .md-left {
+    display: none;
+  }
+
+  .lg-left {
+    display: block;
+  }
+
+  .fixed-col {
+    display: block;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: hidden; /* 스크롤 막기 */
+  }
+}
