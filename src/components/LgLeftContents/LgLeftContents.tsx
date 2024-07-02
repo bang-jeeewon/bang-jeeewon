@@ -56,9 +56,7 @@ const LeftContents = () => {
         <Title level={5}>
           함께 성장해나가는 팀 분위기를 선호하며, <br />
           좋은 품질로 전달하겠다는 진심, <br />
-          신기술에 대한 호기심과 적극성을 가지고 있습니다. <br />
-          봐주셔서 감사합니다. <br />
-          방지원 올림.
+          신기술에 대한 호기심과 적극성을 가지고 있습니다.
         </Title>
 
         <Text onClick={handleEmail} className='email'>
