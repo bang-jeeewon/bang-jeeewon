@@ -6,9 +6,15 @@
   height: 100%;
 }
 
-.scroll-col {
+.scroll-col-md {
+  height: 75vh;
   padding: 0 !important;
-  height: 80vh;
+  overflow-y: auto; /* 세로 스크롤 활성화 */
+}
+
+.scroll-col-lg {
+  height: 95vh;
+  padding: 0 !important;
   overflow-y: auto; /* 세로 스크롤 활성화 */
 }
 
@@ -20,6 +26,14 @@
 
   /* lg-left 숨기기 */
   .lg-left {
+    display: none;
+  }
+
+  .scroll-col-md {
+    display: block;
+  }
+
+  .scroll-col-lg {
     display: none;
   }
 }
@@ -40,5 +54,13 @@
     top: 0;
     height: 100vh;
     overflow: hidden; /* 스크롤 막기 */
+  }
+
+  .scroll-col-md {
+    display: none;
+  }
+
+  .scroll-col-lg {
+    display: block;
   }
 }

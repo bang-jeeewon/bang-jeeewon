@@ -1,15 +1,40 @@
+'use client'
+
 import { Card, Divider, Row, Col } from 'antd'
 import './rightCard.css'
 import sbLogoImg from '/softberry.svg'
 import Project from '../Project/Project'
+import { useEffect, useState } from 'react'
 
 const RightCard = () => {
+  const [period, setPeriod] = useState('')
+  const [isMd, setIsMd] = useState(false)
+
+  const computedPeriod = () => {
+    const startDate = new Date('2022-03-08')
+    const currentDate = new Date()
+
+    let years = currentDate.getFullYear() - startDate.getFullYear()
+    let months = currentDate.getMonth() - startDate.getMonth()
+
+    if (months < 0) {
+      years--
+      months += 12
+    }
+
+    setPeriod(`${years}년 ${months}개월`)
+  }
+
+  useEffect(() => {
+    computedPeriod()
+  }, [])
+
   return (
     <>
       <div className='right-container'>
         <Card className='card'>
           <Card className='card-project'>
-            <p className='period'>2022.03 ~ 현재</p>
+            <p className='period'>2022.03 ~ 현재 ({period})</p>
 
             <Row style={{ display: 'flex', justifyContent: 'start' }}>
               <Col xs={24} sm={24} md={24} lg={24} xl={8} xxl={8}>
