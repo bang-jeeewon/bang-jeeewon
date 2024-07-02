@@ -7,11 +7,8 @@
 }
 
 .scroll-col {
-  overflow-y: auto; /* 세로 스크롤 활성화 */
-}
-
-.right-content-wrapper {
-  height: 100vh;
+  padding: 0 !important;
+  height: 80vh;
   overflow-y: auto; /* 세로 스크롤 활성화 */
 }
 

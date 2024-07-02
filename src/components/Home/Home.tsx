@@ -35,9 +35,7 @@ const Home = () => {
           xxl={16}
           className='scroll-col'
         >
-          <div className='right-content-wrapper'>
-            <RightCard />
-          </div>
+          <RightCard />
         </Col>
       </Row>
     </>

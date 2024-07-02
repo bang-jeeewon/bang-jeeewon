@@ -1,5 +1,5 @@
 import { ToolOutlined, CalendarOutlined, UserOutlined } from '@ant-design/icons'
-import { Flex, Typography, Divider } from 'antd'
+import { Flex, Typography, Divider, Row, Col } from 'antd'
 import './project.css'
 
 const { Title, Text, Link } = Typography
@@ -26,13 +26,12 @@ const Project = ({
   return (
     <>
       <div>
-        <Flex align='center' justify='space-between'>
-          <Title level={4}>{title}</Title>
-
+        <Title level={4}>
+          {title}
           <Link href={url} target='_blank' style={{ marginTop: '1.5rem' }}>
             {url.substring(8)}
           </Link>
-        </Flex>
+        </Title>
 
         <Flex align='center' style={{ marginBottom: '0.5rem' }}>
           <ToolOutlined style={{ marginRight: '0.5rem' }} />
@@ -59,11 +58,21 @@ const Project = ({
           </Text>
         ))}
 
-        <Flex justify='space-between'>
+        <Row>
           {imgs.map((img) => (
-            <img src={img} alt='home' style={{ width: '45%' }} />
+            <Col
+              xs={24}
+              sm={24}
+              md={12}
+              lg={12}
+              xl={12}
+              xxl={12}
+              style={{ margin: 'auto' }}
+            >
+              <img src={img} alt='home' style={{ width: '100%' }} />
+            </Col>
           ))}
-        </Flex>
+        </Row>
 
         <Divider />
       </div>
