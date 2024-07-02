@@ -1,6 +1,6 @@
 # Bang Jiwon
 
-### Frontend Developer / 2022.03 ~ 현재 (3년차)
+### Frontend Developer / 2022.03 ~ 현재(3년차)
 
 - Language : `TypeScript`
 - Framework : `Vue.js` `React` `Next.js` `Pinia`
