@@ -1,4 +1,4 @@
-import { Card, Flex, Divider, Row, Col } from 'antd'
+import { Card, Divider, Row, Col } from 'antd'
 import './rightCard.css'
 import sbLogoImg from '/softberry.svg'
 import Project from '../Project/Project'
