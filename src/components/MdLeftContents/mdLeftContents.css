@@ -5,12 +5,14 @@
 .md-profile-container {
   width: fit-content;
   margin-right: 2rem;
+  display: flex;
 }
 
 .md-profile {
   width: 3rem;
   height: 3rem;
   display: inline-block;
+  margin-right: 0.5rem;
 }
 
 .github-container {

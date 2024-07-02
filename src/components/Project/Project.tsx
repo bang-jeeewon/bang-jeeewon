@@ -1,5 +1,6 @@
 import { ToolOutlined, CalendarOutlined, UserOutlined } from '@ant-design/icons'
 import { Flex, Typography, Divider } from 'antd'
+import './project.css'
 
 const { Title, Text, Link } = Typography
 
@@ -35,10 +36,11 @@ const Project = ({
 
         <Flex align='center' style={{ marginBottom: '0.5rem' }}>
           <ToolOutlined style={{ marginRight: '0.5rem' }} />
-          <Text>개발언어: </Text>
-          {stacks.map((stack) => (
-            <Text code>{stack}</Text>
-          ))}
+          <div className='stack-container'>
+            {stacks.map((stack) => (
+              <Text code>{stack}</Text>
+            ))}
+          </div>
         </Flex>
         <Flex align='center' style={{ marginBottom: '0.5rem' }}>
           <CalendarOutlined style={{ marginRight: '0.5rem' }} />

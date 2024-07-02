@@ -1,4 +1,4 @@
-import { Card, Flex, Divider } from 'antd'
+import { Card, Flex, Divider, Row, Col } from 'antd'
 import './rightCard.css'
 import sbLogoImg from '/softberry.svg'
 import Project from '../Project/Project'
@@ -11,12 +11,19 @@ const RightCard = () => {
           <Card className='card-project'>
             <p className='period'>2022.03 ~ 현재</p>
 
-            <Flex align='center'>
-              <img src={sbLogoImg} alt='sb' className='logo' />
-              <p>직책: EVI Hub 연구원 개발자</p>
-              <Divider type='vertical' />
-              <p>포지션: Frontend Developer</p>
-            </Flex>
+            <Row style={{ display: 'flex', justifyContent: 'start' }}>
+              <Col xs={24} sm={24} md={24} lg={24} xl={8} xxl={8}>
+                <img src={sbLogoImg} alt='sb' className='logo' />
+              </Col>
+              <Col xs={24} sm={24} md={24} lg={24} xl={16} xxl={8}>
+                <p className='text'>
+                  직책: EVI Hub 연구원 개발자
+                  <br />
+                  <Divider type='vertical' className='divider' />
+                  포지션: Frontend Developer
+                </p>
+              </Col>
+            </Row>
 
             <Project
               title='스마트시스템 (가제)'
