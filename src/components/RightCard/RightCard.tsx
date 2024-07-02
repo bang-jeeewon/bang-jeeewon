@@ -8,7 +8,6 @@ import { useEffect, useState } from 'react'
 
 const RightCard = () => {
   const [period, setPeriod] = useState('')
-  const [isMd, setIsMd] = useState(false)
 
   const computedPeriod = () => {
     const startDate = new Date('2022-03-08')
