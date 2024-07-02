@@ -73,7 +73,7 @@ const RightCard = () => {
                 '코드 가독성과 유지보수성을 위해 TypeScript를, 성능 개선과 Composition API와 같은 신기능 사용을 위해 Vue 3로, 빌드 속도 개선과 빠른 개발 서버 시작을 위해 Webpack을 Vite로 마이그레이션',
                 '마이그레이션 후 S3 버킷 크기는 32%, 객체 수는 49%로 축소되어 성능 개선 경험',
               ]}
-              imgs={['/ca-home.svg', '/price.svg']}
+              imgs={['/ca-home.png', '/ca-price.png']}
             />
 
             <Project
@@ -91,7 +91,7 @@ const RightCard = () => {
                 '기획 단계에서 디자이너와 함께 UI/UX를 고민하며 sticky 속성을 활용하여 모바일 환경에서의 사용자 경험 향상',
                 'AWS S3, Route 53, CloudFront를 활용한 프론트엔드 서버 호스팅',
               ]}
-              imgs={['/donut1.svg', '/donut2.svg']}
+              imgs={['/donut1.png', '/donut2.png']}
             />
 
             <Project
@@ -112,7 +112,7 @@ const RightCard = () => {
                 'NH올원뱅크 앱에서 소프트베리 EV Infra 앱으로의 유입과 사용자 경로 분석 등을 위해 Google Analytics를 연동',
                 'AWS S3, Route 53, CloudFront를 활용한 프론트엔드 서버 호스팅',
               ]}
-              imgs={['/nh1.svg', '/nh2.svg']}
+              imgs={['/nh1.png', '/nh2.png']}
             />
           </Card>
         </Card>
