@@ -2,6 +2,7 @@ import { ToolOutlined, CalendarOutlined, UserOutlined } from '@ant-design/icons'
 import { Flex, Typography, Divider, Row, Col, Skeleton } from 'antd'
 import './project.css'
 import { useEffect, useState } from 'react'
+import animation from '../../styles/animations.module.css'
 
 const { Title, Text, Link } = Typography
 
@@ -29,7 +30,7 @@ const Project = ({
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoding(true)
-    }, 2000)
+    }, 1000)
 
     return () => clearTimeout(timer)
   }, [])
@@ -37,9 +38,11 @@ const Project = ({
   return (
     <>
       {!loading ? (
-        <Skeleton active />
+        <div style={{ marginTop: '1.6625rem' }}>
+          <Skeleton active />
+        </div>
       ) : (
-        <div>
+        <div className={`${animation['slide-down']}`}>
           <Title level={4}>
             {title}
             <Link href={url} target='_blank' style={{ marginTop: '1.5rem' }}>

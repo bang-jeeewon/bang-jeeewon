@@ -18,8 +18,8 @@
 }
 
 .profile {
-  width: 8rem;
-  height: 8rem;
+  width: 7rem;
+  height: 7rem;
   margin-bottom: 0.5rem;
   display: inline-block;
 }
@@ -64,7 +64,6 @@
 
 .name {
   font-size: 1.5rem;
-  padding-left: 0.5rem;
 }
 
 .left-contents-container {

@@ -5,6 +5,7 @@ import './rightCard.css'
 import sbLogoImg from '/softberry.svg'
 import Project from '../Project/Project'
 import { useEffect, useState } from 'react'
+import animation from '../../styles/animations.module.css'
 
 const RightCard = () => {
   const [period, setPeriod] = useState('')
@@ -31,7 +32,7 @@ const RightCard = () => {
   return (
     <>
       <div className='right-container'>
-        <Card className='card'>
+        <Card className={`card ${animation['fade-in']}`}>
           <Card className='card-project'>
             <p className='period'>2022.03 ~ 현재 ({period})</p>
 

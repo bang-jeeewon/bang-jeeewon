@@ -1,5 +1,5 @@
 /* animations.module.css */
-@keyframes slide-up {
+@keyframes slideUp {
   from {
     opacity: 0;
     transform: translateY(100%);
@@ -9,7 +9,61 @@
     transform: translateY(0);
   }
 }
-
 .slide-up {
-  animation: slide-up 450ms ease-in 0ms forwards;
+  animation: slideUp 450ms ease-in 0ms forwards;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0; /* 시작은 투명 */
+    transform: translateY(-20px); /* 위에서 아래로 */
+  }
+  100% {
+    opacity: 1; /* 끝은 완전히 보임 */
+    transform: translateY(0);
+  }
+}
+.slide-down {
+  animation: slideDown 300ms ease 0ms forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 400ms ease-in 0ms forwards;
+}
+
+@keyframes fadeInY {
+  from {
+    opacity: 0;
+    transform: translateY(-10px); /* 위에서 아래로 */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in-y {
+  animation: fadeInY 400ms ease-in 0ms forwards;
+}
+
+/* 왼쪽에서 굴러들어오는 애니메이션 */
+@keyframes rollIn {
+  0% {
+    transform: translateX(-100%) rotate(-360deg); /* 왼쪽 바깥에서 시작 */
+    opacity: 0; /* 초기 투명도 */
+  }
+  100% {
+    transform: translateX(0) rotate(0deg); /* 원래 위치로 */
+    opacity: 1; /* 완전한 불투명도 */
+  }
+}
+.roll-in {
+  animation: rollIn 1s ease-in-out forwards;
 }
