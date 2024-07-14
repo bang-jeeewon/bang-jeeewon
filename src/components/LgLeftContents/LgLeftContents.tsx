@@ -31,7 +31,7 @@ const LeftContents = () => {
         <p className='title hi'>안녕하세요.</p>
         <div className='sub-title'>
           <ReactTyped
-            strings={['Front', 'Vue3', 'TypeScript', 'UI', 'React', 'Next.js']}
+            strings={['Front', 'Vue3', 'TypeScript', 'React', 'Next.js']}
             typeSpeed={50}
             backSpeed={25}
             loop={true}

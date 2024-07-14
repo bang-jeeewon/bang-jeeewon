@@ -40,15 +40,16 @@ const RightCard = () => {
                 <img src={sbLogoImg} alt='sb' className='logo' />
               </Col>
               <Col xs={24} sm={24} md={24} lg={24} xl={16} xxl={8}>
-                <p className='text'>
+                <div className='text'>
                   직책: EVI Hub 연구원 개발자
                   <br />
                   <Divider type='vertical' className='divider' />
                   포지션: Frontend Developer
-                </p>
+                </div>
               </Col>
             </Row>
 
+            {/* <Suspense fallback={<Skeleton active />}> */}
             <Project
               title='스마트시스템 (가제)'
               stacks={[
@@ -70,6 +71,7 @@ const RightCard = () => {
               ]}
               imgs={[]}
             />
+            {/* </Suspense> */}
 
             <Project
               title='EVI Hub Client Admin 웹 서비스 개발'
