@@ -65,6 +65,13 @@ const RightCard = () => {
               back={1}
               url=''
               descriptions={[
+                'App Router 활용하여 초기 로딩 성능 향상',
+                'Route Handlers 사용하여 외부 백엔드 API key 보호, API 엔드포인트를 생성하여 BFF 패턴으로 활용',
+                'Dynamic rendering 시 Hydration error 트러블슈팅',
+                '재사용 가능한 custom Hooks 구현 (새로고침 기능, 날짜 표현 등)',
+                '공통 UI 컴포넌트 구현 (Button, Input, Modal, Bottom Sheet 등)',
+                'Zustand를 사용한 효율적인 전역 상태 관리 구현 및 persist 미들웨어로 localStorage 사용',
+                '피그마 기반 화면 기획으로 Tailwind config 사전 작성, 개발 효율 증대',
                 '프로젝트 생성 및 초기화, 코드 구조 셋업',
                 '모바일과 키오스크 해상도에 최적화된 반응형 디자인 구현',
                 'AWS API Gateway Mock API 구현',
