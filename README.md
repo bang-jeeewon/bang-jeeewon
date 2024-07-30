@@ -3,7 +3,7 @@
 ### Frontend Developer / 2022.03 ~ 현재(3년차)
 
 - Language : `TypeScript`
-- Framework : `Vue.js` `React` `Next.js` `Pinia`
+- Framework : `Next.js` `Vue.js` `React`
 - Library : `Vuex` `Pinia` `Zustand`
 - CSS Framework : `TailwindCSS` `Vuetify`
 - Build Tool : `Vite` `Webpack`
