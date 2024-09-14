@@ -100,7 +100,7 @@ const RightCard = () => {
             <Project
               title='도넛 - 전기차 보조금 조회 사이트'
               stacks={['Next.js', 'TypeScript', 'TailwindCSS', 'Google Analytics']}
-              period='2024.01 ~ 2024.02'
+              period='2024.01 ~ 현재'
               front={2}
               back={1}
               url='https://donut.im'
