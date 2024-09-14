@@ -53,13 +53,7 @@ const RightCard = () => {
             {/* <Suspense fallback={<Skeleton active />}> */}
             <Project
               title='스마트시스템 (가제)'
-              stacks={[
-                'Next.js',
-                'TypeScript',
-                'TailwindCSS',
-                'Zustand',
-                'AWS API Gateway',
-              ]}
+              stacks={['Next.js', 'TypeScript', 'TailwindCSS', 'Zustand', 'AWS API Gateway', 'Vercel']}
               period='2024.05 ~ 현재'
               front={1}
               back={1}
@@ -83,14 +77,7 @@ const RightCard = () => {
 
             <Project
               title='EVI Hub Client Admin 웹 서비스 개발'
-              stacks={[
-                'Vue3',
-                'TypeScript',
-                'Vuetify3',
-                'Vite',
-                'Pinia',
-                'AWS CodePipeline',
-              ]}
+              stacks={['Vue3', 'TypeScript', 'Vuetify3', 'Vite', 'Pinia', 'AWS CodePipeline']}
               period='2022.03 ~ 현재'
               front={1}
               back={2}
@@ -112,7 +99,7 @@ const RightCard = () => {
 
             <Project
               title='도넛 - 전기차 보조금 조회 사이트'
-              stacks={['Next.js', 'TypeScript', 'TailwindCSS']}
+              stacks={['Next.js', 'TypeScript', 'TailwindCSS', 'Google Analytics']}
               period='2024.01 ~ 2024.02'
               front={2}
               back={1}
@@ -133,12 +120,7 @@ const RightCard = () => {
 
             <Project
               title='NH올원뱅크 웹뷰 개발'
-              stacks={[
-                'Nuxt.js',
-                'JavaScript',
-                'TailwindCSS',
-                'Google Analytics',
-              ]}
+              stacks={['Nuxt.js', 'JavaScript', 'TailwindCSS', 'Google Analytics']}
               period='2023.07 ~ 2023.09'
               front={1}
               back={1}
