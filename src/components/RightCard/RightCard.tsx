@@ -61,14 +61,13 @@ const RightCard = () => {
                 'App Router 활용하여 초기 로딩 성능 향상',
                 'Route Handlers 사용하여 외부 백엔드 API key 보호, API 엔드포인트를 생성하여 BFF 패턴으로 활용',
                 'Dynamic rendering 시 Hydration error 트러블슈팅',
-                '재사용 가능한 custom Hooks 구현 (새로고침 기능, 날짜 표현 등)',
-                '공통 UI 컴포넌트 구현 (Button, Input, Modal, Bottom Sheet 등)',
+                '재사용 가능한 custom Hooks 구현',
+                '공통 UI 컴포넌트 구현',
                 'Zustand를 사용한 효율적인 전역 상태 관리 구현 및 persist 미들웨어로 localStorage 사용',
                 '피그마 기반 화면 기획으로 Tailwind config 사전 작성, 개발 효율 증대',
                 '프로젝트 생성 및 초기화, 코드 구조 셋업',
                 '모바일과 키오스크 해상도에 최적화된 반응형 디자인 구현',
                 'AWS API Gateway Mock API 구현',
-                'Vercel 활용하여 CI/CD 구축',
               ]}
               imgs={[]}
             />
@@ -83,7 +82,6 @@ const RightCard = () => {
               descriptions={[
                 '팀원들과 스터디를 겸해 진행한 토이 프로젝트를 사내 발표 후 긍정적인 피드백을 받아 EV Infra 앱의 신규 기능으로 등록',
                 '모바일과 PC 해상도에 최적화된 반응형 디자인 구현',
-                '기획 단계에서 디자이너와 함께 UI/UX를 고민하며 sticky 속성을 활용하여 모바일 환경에서의 사용자 경험 향상',
                 '신규 유저 유입을 위해 서비스 기획에 참여하고, UI/UX 화면 기획에 주도적으로 의견을 제안함',
                 '전기차 동호회 카페에서 서비스 추천 게시글 확인, 유저 사이에서 긍정적인 피드백 획득',
                 'Google Analytics 연동 및 서비스의 성장 가능성 확인',
@@ -105,10 +103,9 @@ const RightCard = () => {
                 'Vue3의 빌트인 컴포넌트 Suspense 사용하여 비동기로 렌더링',
                 'AWS CodePipeline과 CodeBuild를 활용하여 CI/CD 파이프라인 구축',
                 '함수 기반 유연한 코드 구조를 적용하기 위해 Composition API 사용',
-                'Google Maps API 활용하여 지도 기능 구현 및 커스터마이징',
-                '시간표 관련 라이브러리가 없어 직접 맞춤형 솔루션을 설계하고 구현',
+                'Google Maps API 활용',
                 'i18n 라이브러리를 사용하여 다국어 처리 구현',
-                'AWS EC2 Java에 Vue를 설치 및 빌드하여 배포되어있던 구조를 Vue는 단독으로 S3로 분리하고 CloudFront CDN 적용하여 로딩속도 개선',
+                'AWS EC2 Java에 Vue를 설치 및 빌드하여 배포되어있던 구조를 Vue는 단독으로 S3로 분리하고 CloudFront CDN 적용',
                 '기존의 조회 기능이 POST 메서드로 구현된 문제를 해결하기 위해 백엔드 개발자와 협력하여 RESTful API에 맞춰 새로운 Client 전용 서비스로 재구현',
                 '코드 가독성과 유지보수성을 위해 TypeScript를, 성능 개선과 Composition API와 같은 신기능 사용을 위해 Vue 3로, 빌드 속도 개선과 빠른 개발 서버 시작을 위해 Webpack을 Vite로 마이그레이션',
                 '마이그레이션 후 S3 버킷 크기는 32%, 객체 수는 49%로 축소되어 성능 개선 경험',
