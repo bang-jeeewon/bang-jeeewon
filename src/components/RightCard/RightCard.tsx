@@ -88,7 +88,7 @@ const RightCard = () => {
             <Project
               title='도넛 - 전기차 보조금 조회 사이트'
               stacks={['Next.js', 'TypeScript', 'TailwindCSS', 'Google Analytics']}
-              period='2024.01 ~ 현재'
+              period='2024.01 ~ 2024.10'
               front={2}
               back={1}
               url='https://donut.im'
@@ -108,7 +108,7 @@ const RightCard = () => {
             <Project
               title='EVI Hub Client Admin 웹 서비스 개발'
               stacks={['Vue3', 'TypeScript', 'Vuetify3', 'Vite', 'Pinia', 'AWS CodePipeline']}
-              period='2022.03 ~ 현재'
+              period='2022.03 ~ 2024.10'
               front={1}
               back={2}
               url=''
