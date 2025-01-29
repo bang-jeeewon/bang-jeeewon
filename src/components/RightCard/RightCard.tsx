@@ -1,51 +1,66 @@
-'use client';
+'use client'
 
-import { Card, Divider, Row, Col } from 'antd';
-import './rightCard.css';
-import sbLogoImg from '/softberry.svg';
-import Project from '../Project/Project';
-import { useEffect, useState } from 'react';
-import animation from '../../styles/animations.module.css';
+import { Card, Divider, Row, Col } from 'antd'
+import animation from '../../styles/animations.module.css'
+import './rightCard.css'
+import sbLogoImg from '/softberry.svg'
+import ptLogoImg from '/proptier.jpeg'
+import Project from '../Project/Project'
 
 const RightCard = () => {
-  const [period, setPeriod] = useState('');
+  const companies = [
+    {
+      name: '소프트베리',
+      start: '2022-03-08',
+      end: '2024-10-11',
+      logo: sbLogoImg,
+      description: 'EVI Hub 연구원 개발자',
+      position: 'Frontend Developer',
+    },
+    {
+      name: '프롭티어',
+      start: '2024-12-16',
+      end: '',
+      logo: ptLogoImg,
+      description: '서비스개발Part 매니저 개발자',
+      position: 'Frontend Developer',
+    },
+  ]
 
-  const computedPeriod = () => {
-    const startDate = new Date('2022-03-08');
-    const currentDate = new Date();
+  const computedPeriod = (start: string, end: string) => {
+    const startDate = new Date(start)
+    const endDate = new Date(end)
 
-    let years = currentDate.getFullYear() - startDate.getFullYear();
-    let months = currentDate.getMonth() - startDate.getMonth();
+    let years = endDate.getFullYear() - startDate.getFullYear()
+    let months = endDate.getMonth() - startDate.getMonth()
 
     if (months < 0) {
-      years--;
-      months += 12;
+      years--
+      months += 12
     }
 
-    setPeriod(`${years}년 ${months}개월`);
-  };
-
-  useEffect(() => {
-    computedPeriod();
-  }, []);
+    return `${years}년 ${months}개월`
+  }
 
   return (
     <>
       <div className='right-container'>
         <Card className={`card ${animation['fade-in']}`}>
           <Card className='card-project'>
-            <p className='period'>2022.03 ~ 현재 ({period})</p>
+            <p className='period'>
+              {companies[0].start.substring(0, 7).replace(/-/g, '.')} ~ {companies[0].end.substring(0, 7).replace(/-/g, '.')} ({computedPeriod(companies[0].start, companies[0].end)})
+            </p>
 
             <Row style={{ display: 'flex', justifyContent: 'start' }}>
               <Col xs={24} sm={24} md={24} lg={24} xl={8} xxl={8}>
-                <img src={sbLogoImg} alt='sb' className='logo' />
+                <img src={companies[0].logo} alt='sb' className='logo' />
               </Col>
               <Col xs={24} sm={24} md={24} lg={24} xl={16} xxl={8}>
                 <div className='text'>
-                  직책: EVI Hub 연구원 개발자
+                  직책: {companies[0].description}
                   <br />
                   <Divider type='vertical' className='divider' />
-                  포지션: Frontend Developer
+                  포지션: {companies[0].position}
                 </div>
               </Col>
             </Row>
@@ -53,7 +68,7 @@ const RightCard = () => {
             <Project
               title='스마트시스템 (가제)'
               stacks={['Next.js', 'TypeScript', 'TailwindCSS', 'Zustand', 'AWS API Gateway', 'Vercel']}
-              period='2024.05 ~ 현재'
+              period='2024.05 ~ 2024.10'
               front={1}
               back={1}
               url=''
@@ -117,17 +132,14 @@ const RightCard = () => {
               front={1}
               back={1}
               url='https://nh.ev-infra.com'
-              descriptions={[
-                'Naver Maps API 활용',
-                'NH올원뱅크 앱에서 소프트베리 EV Infra 앱으로의 유입과 사용자 경로 분석 등을 위해 Google Analytics를 연동',
-              ]}
+              descriptions={['Naver Maps API 활용', 'NH올원뱅크 앱에서 소프트베리 EV Infra 앱으로의 유입과 사용자 경로 분석 등을 위해 Google Analytics를 연동']}
               imgs={['/nh1.png', '/nh2.png']}
             />
           </Card>
         </Card>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default RightCard;
+export default RightCard
