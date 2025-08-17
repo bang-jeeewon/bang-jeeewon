@@ -79,17 +79,8 @@ const Project = ({
 
           <Row>
             {imgs.map((img, index) => (
-              <Col
-                key={index}
-                xs={24}
-                sm={24}
-                md={12}
-                lg={12}
-                xl={12}
-                xxl={12}
-                style={{ margin: 'auto' }}
-              >
-                <img src={img} alt='home' style={{ width: '100%' }} />
+              <Col key={index} xs={24} sm={24} md={12} lg={12} xl={12} xxl={12} style={{ margin: 'auto' }}>
+                <img src={img} alt='home' style={{ width: '100%', maxHeight: '20rem', objectFit: 'contain' }} />
               </Col>
             ))}
           </Row>

@@ -6,6 +6,7 @@ import './rightCard.css'
 import sbLogoImg from '/softberry.svg'
 import ptLogoImg from '/proptier.jpeg'
 import Project from '../Project/Project'
+import Spacing from '../Common/Spacing'
 
 const RightCard = () => {
   const companies = [
@@ -29,7 +30,7 @@ const RightCard = () => {
 
   const computedPeriod = (start: string, end: string) => {
     const startDate = new Date(start)
-    const endDate = new Date(end)
+    const endDate = end ? new Date(end) : new Date()
 
     let years = endDate.getFullYear() - startDate.getFullYear()
     let months = endDate.getMonth() - startDate.getMonth()
@@ -45,6 +46,63 @@ const RightCard = () => {
   return (
     <>
       <div className='right-container'>
+        <Card className={`card ${animation['fade-in']}`}>
+          <Card className='card-project'>
+            <p className='period'>
+              {companies[1].start.substring(0, 7).replace(/-/g, '.')} ~ {companies[1].end.substring(0, 7).replace(/-/g, '.')} ({computedPeriod(companies[1].start, companies[1].end)})
+            </p>
+
+            <Row style={{ display: 'flex', justifyContent: 'start' }}>
+              <Col xs={24} sm={24} md={24} lg={24} xl={8} xxl={8}>
+                <img src={companies[1].logo} alt='sb' className='logo' />
+              </Col>
+              <Col xs={24} sm={24} md={24} lg={24} xl={16} xxl={8}>
+                <div className='text'>
+                  직책: {companies[1].description}
+                  <br />
+                  <Divider type='vertical' className='divider' />
+                  포지션: {companies[1].position}
+                </div>
+              </Col>
+            </Row>
+
+            <Project
+              title='이실장넷 앱 개편'
+              stacks={['React', 'TypeScript', 'Zustand', 'Vite', 'Tanstack Query', 'Tanstack Router']}
+              period='2025.06 ~ 진행중'
+              front={1}
+              back={2}
+              url='https://www.aipartner.net/'
+              descriptions={['웹뷰 개발', '네이티브 앱과 웹뷰 간 JWT 토큰 동기화', 'JWT 토큰 관리']}
+              imgs={[]}
+            />
+
+            <Project
+              title='뉴렌트'
+              stacks={['React', 'JavaScript', 'Zustand']}
+              period='2024.12 ~ 진행중'
+              front={1}
+              back={2}
+              url='https://www.aipartner.plus/newrent/'
+              descriptions={['유지보수 및 기능 추가']}
+              imgs={[]}
+            />
+
+            <Project
+              title='이실장플러스'
+              stacks={['React', 'JavaScript', 'Zustand']}
+              period='2024.12 ~ 진행중'
+              front={1}
+              back={1}
+              url='https://www.aipartner.plus/'
+              descriptions={['유지보수 및 기능 추가']}
+              imgs={[]}
+            />
+          </Card>
+        </Card>
+
+        <Spacing size={10} />
+
         <Card className={`card ${animation['fade-in']}`}>
           <Card className='card-project'>
             <p className='period'>
@@ -82,7 +140,7 @@ const RightCard = () => {
                 '모바일과 키오스크 해상도에 최적화된 반응형 디자인 구현',
                 'AWS API Gateway Mock API 구현',
               ]}
-              imgs={[]}
+              imgs={['/smart.png']}
             />
 
             <Project
